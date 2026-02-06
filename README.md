@@ -4,7 +4,9 @@
 
 Turn scattered small balances across multiple chains into usable funds with a single signature.
 
-> ⚠️ **Status:** In Development
+> ⚠️ **Status:** In Development - Not yet tested on testnet or production
+> 
+> **Important:** This is a prototype implementation. Smart contracts have not been audited or deployed. Use at your own risk.
 
 ## The Problem
 
@@ -83,16 +85,38 @@ User Signs → Solver Executes → User Receives
 
 ## Supported Chains
 
-| Chain | Status | EIP-7702 |
-|-------|--------|----------|
-| Ethereum | ✅ | ✅ |
-| Arbitrum | ✅ | ✅ |
-| Optimism | ✅ | ✅ |
-| Base | ✅ | ✅ |
-| BSC | ✅ | ✅ |
-| Polygon | 🔄 | 🔄 |
-| Gnosis | ✅ | ✅ |
-| Scroll | ✅ | ✅ |
+LlamaSweep requires **EIP-7702 support** (Pectra upgrade). Currently supported:
+
+| Chain | Chain ID | Status |
+|-------|----------|--------|
+| Ethereum | 1 | ✅ Supported |
+| BNB Smart Chain | 56 | ✅ Supported |
+| Arbitrum | 42161 | ✅ Supported |
+| Optimism | 10 | ✅ Supported |
+| Base | 8453 | ✅ Supported |
+| Polygon | 137 | ✅ Supported |
+| ZKsync Era | 324 | ✅ Supported |
+| Gnosis | 100 | ✅ Supported |
+| Scroll | 534352 | ✅ Supported |
+| Zora | 7777777 | ✅ Supported |
+| Mode | 34443 | ✅ Supported |
+
+### Coming Soon
+
+| Chain | Status |
+|-------|--------|
+| Soneium | Planned |
+| Unichain | Planned |
+| Ink | Planned |
+
+### Not Supported
+
+| Chain | Reason |
+|-------|--------|
+| Avalanche | No EIP-7702 |
+| Fantom | No EIP-7702 |
+
+> **Note:** EIP-7702 was introduced in Ethereum's Pectra upgrade (April 2025). Chain support depends on their adoption of this standard.
 
 ## Fees
 
