@@ -174,12 +174,16 @@ Without LlamaSweep, you'd pay more than 10% in gas alone for small amounts.
 
 ### As a User
 
-1. Visit [swap.defillama.com/?tab=sweep](https://swap.defillama.com/?tab=sweep)
-2. Connect your wallet
-3. Review found dust
-4. Select destination chain and token
-5. Sign the EIP-7702 authorization
-6. Wait for settlement (~5 minutes)
+> ⚠️ **Not Yet Available:** LlamaSweep is currently a prototype and not deployed. The URL below is the *proposed* integration point if accepted by DefiLlama.
+
+**Proposed location:** `swap.defillama.com/?tab=sweep`
+
+Once deployed, the flow would be:
+1. Connect your wallet
+2. Review found dust across chains
+3. Select destination chain and token
+4. Sign the EIP-7702 authorization
+5. Receive consolidated funds (~5 minutes)
 
 ### As a Developer
 
